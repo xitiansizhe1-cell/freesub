@@ -20,16 +20,8 @@
       "password": "1234!@#$"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
-      "server": "141.164.45.187",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
       "server": "3.39.4.109",
       "server_port": 18967,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -49,8 +41,37 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaohe",
+      "server": "141.164.45.187",
+      "server_port": 6679,
+      "method": "aes-256-gcm",
+      "password": "TEzjfAYq2IjtuoS"
+    },
+    {
       "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 05 - xiaohe",
+      "server": "3.39.4.109",
+      "server_port": 13672,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - xiaohe",
       "server": "151.245.106.49",
       "server_port": 2053,
       "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
@@ -69,56 +90,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - xiaohe",
-      "server": "3.39.4.109",
-      "server_port": 13672,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 07 - xiaohe",
-      "server": "132.145.80.230",
-      "server_port": 80,
-      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "kr02.a0a.xyz"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 08 - xiaohe",
-      "server": "132.226.226.189",
-      "server_port": 50160,
-      "password": "1671a252e2a97dc2bda4e515475931da",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
+      "server": "141.164.45.187",
+      "server_port": 8888,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 09 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - xiaohe",
       "server": "154.90.62.70",
       "server_port": 56127,
       "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
@@ -130,7 +111,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 10 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 09 - xiaohe",
       "server": "152.67.200.82",
       "server_port": 50160,
       "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
@@ -141,12 +122,24 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - xiaohe",
+      "server": "132.226.226.189",
+      "server_port": 50160,
+      "password": "1671a252e2a97dc2bda4e515475931da",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 11 - xiaohe",
       "server": "141.164.45.187",
-      "server_port": 5498,
+      "server_port": 9101,
       "method": "aes-256-gcm",
-      "password": "lGqs95QkFHo2NV"
+      "password": "e4FCWrgpkji3QY"
     },
     {
       "type": "hysteria2",
@@ -161,12 +154,12 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇰🇷 韩国 (South Korea) 13 - xiaohe",
-      "server": "141.164.45.187",
+      "server": "146.56.112.110",
       "server_port": 8888,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
+      "uuid": "e7c302f3-90d6-42dd-9d7d-94a3683a3707",
+      "security": "auto"
     },
     {
       "type": "selector",
