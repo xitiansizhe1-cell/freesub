@@ -13,11 +13,7 @@
       "tls": {
         "enabled": true,
         "server_name": "roma2.moritech.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       }
     },
     {

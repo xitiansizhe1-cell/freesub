@@ -11,18 +11,7 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: 22f60053-tlheo0-tzxeoy-hns7.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
-  tls: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 03 (家宽) - xiaohe
+- name: 🇷🇴 罗马尼亚 (Romania) 02 (家宽) - xiaohe
   server: roma2.moritech.net
   port: 443
   udp: true
@@ -32,22 +21,49 @@ proxies:
   tls: true
   servername: roma2.moritech.net
   skip-cert-verify: false
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
   client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
+  server: 211.48.30.184
+  port: 30017
+  udp: true
+  type: vless
+  uuid: beec57a5-8266-4279-b279-f495bdc70699
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 03 (家宽) - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 03 (家宽) - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
