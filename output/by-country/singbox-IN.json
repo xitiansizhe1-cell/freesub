@@ -6,19 +6,19 @@
     {
       "type": "hysteria2",
       "tag": "🇮🇳 印度 (India) 01 - xiaohe",
-      "server": "65.2.191.73",
+      "server": "65.2.178.161",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-in-001.fastervpn.world",
+        "server_name": "65.2.178.161",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇮🇳 印度 (India) 02 - xiaohe",
-      "server": "65.2.178.161",
+      "server": "65.2.191.73",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
