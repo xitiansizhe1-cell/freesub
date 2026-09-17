@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: srv-21bac9.vless.monster
   port: 2087
   udp: true
@@ -26,22 +16,30 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 210.152.85.154
-  port: 19364
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  server: 31.58.181.88
+  port: 8443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
+  flow: xtls-rprx-vision
   tls: true
-  servername: cdn8848.776676.xyz
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /collect/user/products?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 85.204.107.175
+  server: 85.204.107.171
   port: 8080
   udp: true
   type: hysteria2
@@ -49,21 +47,6 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 116.204.164.30
-  port: 7443
-  udp: true
-  type: vless
-  uuid: 8dd3f783-aa97-420b-8aaa-d8a6c9679dad
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -74,6 +57,18 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  server: sa-18cf795a50985ad9.sr-fa525e02d0951c2f.r.vpvpn.club
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0c597b0d-99d7-4c27-befe-6c5d339d7dbe
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
+  servername: baeb.edge-static.space
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
