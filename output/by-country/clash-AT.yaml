@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 156.226.168.221
-  port: 35193
+- name: 🇦🇹 奥地利 (Austria) 01 - xiaohe
+  server: 152.53.1.40
+  port: 443
   udp: true
   type: vless
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
+  servername: at.quattro-tech.ru
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 01 - xiaohe
 rules:
 - MATCH,PROXIES
