@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9034,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "Yg4MbdXFQ9HFFVY6"
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "vless",
@@ -52,7 +52,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -73,13 +73,25 @@
         "server_name": "omvpn.info",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
           "public_key": "cD8mVX41lqyVGCuPz0-tQWcNqkMxiPZxU7JJsyyNAEI",
           "short_id": ""
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe",
+      "server": "91.240.86.70",
+      "server_port": 24443,
+      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy.quattro-tech.ru",
+        "insecure": true
       }
     },
     {
@@ -91,7 +103,8 @@
         "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
+        "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe"
       ]
     },
     {
@@ -102,7 +115,8 @@
         "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
+        "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
