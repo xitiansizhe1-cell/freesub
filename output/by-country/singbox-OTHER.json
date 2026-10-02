@@ -6,20 +6,21 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.67.122",
+      "server": "ccs2g.pai50288.uk",
       "server_port": 443,
-      "uuid": "ee556a4f-d9f6-44de-af02-42c51659416a",
+      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
       "tls": {
         "enabled": true,
-        "server_name": "novantunnel.tech",
-        "insecure": false
+        "server_name": "ccs2g.pai50288.uk",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/Novan-AE9",
-        "headers": {
-          "Host": "novantunnel.tech"
-        }
+        "path": "/pai50288"
       }
     },
     {

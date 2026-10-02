@@ -13,18 +13,15 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  server: 103.86.49.57
-  port: 80
+  server: silversbgfgov.vip43.wogbcnmnagfwgov.com
+  port: 11243
   udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 104.16.111.193
+  server: 104.18.26.90
   port: 443
   udp: true
   type: vless
@@ -32,6 +29,7 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
