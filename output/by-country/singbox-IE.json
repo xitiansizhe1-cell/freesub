@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "ie.tronsg.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -27,7 +27,7 @@
         "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -48,7 +48,7 @@
         "server_name": "vk.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,

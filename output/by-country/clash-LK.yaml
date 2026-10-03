@@ -24,10 +24,12 @@ proxies:
   tls: true
   servername: trackydev.site
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: trackydev.site
 proxy-groups:
 - name: PROXIES
   type: select
